@@ -1,0 +1,19 @@
+token:
+  expiration_time: 864500000
+  secret: '{cipher}AQCjABIBWeu5eipZiMfgu7bAyLIkFFzckIAK7vqQZM53GnLfGzpCqpEWMCM//4hzlopvsZQHN10NmoJc3J81ZQuOAHRP4AeyPiEkEfJai3OPtfBPol5U6f0vnEzSnm/GSE/KrKCQaPM7AKFiM27gHT22jAUbyFksgRpS+NK0TGAKDLXOxzP/rMIRhTlF8LcE8v1aAhyjOyu5he14Rc/xDBeGIcg9FJ10vXhxQmomSBKlMDEBfTsG0EgfxXlL3ewv3QPmAb/6CxvxSFFIsFHl6S1TfvN7GYUIdRk9KpZXDFTYX973DcLqFEJ7b9G+gKjyy6uLEvv/tg0zLOBSqkHfQ5cTvAee1TAfH3hEO6kHZVqMnyCFJkn4T6FqOYvDJGE5GgTNoarm8m4PtVeDgr+ivXri'
+
+gateway:
+  ip: 192.168.0.8  
+
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:test
+    username: sa
+    password: '{cipher}AQCmwc67/GyGIytfarJbhCInv4sy0hUPyxfddCqdliJph3F1vJP8IeZ3bIU5blEar7B7vW0X+wBI/eNjKTIpthJiOm9Tgn7zOqb74AdKxfgBZb9vOiDDtUq5DwMw9t2ij6IMH7//afHdGKIDDfVN9XuSwVBzTaUe7ZZwhKXEviErd4H76kgPwQH9HHfcIvU6BeAvDEzQuN5SzurY0uN6NwSZT0o7yhFCBIKtwQV1ACBPfXuglt5O+450djvGqJR+1wipYDqajLuUpL3E4ewgmXmT7e8bke/NRKJ1C4kAmeI/nun7xtg7ljfOsBXShzWw+os3nPUKeimMa63tOZuxoTUPuT5go+1+tUPghXosIqoxuO/SfOR8uuhipZKO6qG/ft4='
+
+
+order:
+  url: http://order-service/order-service/%s/orders
+  exception:
+    orders_is_empty: "주문 리스트가 비어있습니다."
